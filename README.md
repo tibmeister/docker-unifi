@@ -12,7 +12,7 @@
 
 The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. (https://www.ubnt.com/enterprise/#unifi)
 
-This project is aimed to provide a turn-key solution for running the UniFi® Controller software in a Docker Swarm using v3 compose files to create a stack.
+This project is aimed to provide a turn-key solution for running the UniFi® Controller software in a Docker Swarm using v3 compose files to create a stack or by running as a standalone container.  The key is to have a volume mount that is persistent.
 
 [Unifi Ports Used](https://help.ubnt.com/hc/en-us/articles/218506997-UniFi-Ports-Used)
 
