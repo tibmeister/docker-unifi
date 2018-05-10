@@ -23,4 +23,6 @@ This is the Ubiquiti's UniFi software that has been nicely wrapped into a contai
 
 In order to run, here is an example that mounts a separate log and data volume into the container.  This also has the ports exposed that allow for L-2 discovery as well as general access to the controller using http://{controller}:8443/
 
+Also, the built-in performance testing ports are also exposed so that you can perform some tests from your device running the UniFi app and the controller, which is 6789. 
+
 docker run --restart=always -d -p 8080:8080 -p 8443:8443 -p 8880:8880 -p 37117:27117 -p 161:8161 -p 6789:6789 -v /opt/unifi/data:/usr/lib/unifi/data -v /opt/unifi/logs:/usr/lib/unifi/logs --name unifi5 tibmeister/docker-unifi:latest
